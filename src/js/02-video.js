@@ -14,4 +14,6 @@ player.on(
   }, 1000)
 );
 
-player.setCurrentTime(currentTime).then(function (seconds) {});
+if (currentTime) {
+  player.setCurrentTime(currentTime).then(function (seconds) {});
+}
